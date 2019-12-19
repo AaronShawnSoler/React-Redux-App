@@ -19,7 +19,7 @@ function Question({questionData, answer}) {
     return(
         <div style={styles}>
             <h2>{questionData.question.replace(/&quot;/g, '"').replace(/&#039;/g, "'")}</h2>
-            {choices.map((choice, index) => <button onClick={handleChoice} key={index}>{choice.replace(/&#039;/g, "'").replace(/&amp;/g, "&").replace(/&#039;/g, "'").replace(/&eacute;/g, "é")}</button>)}
+            {choices.map((choice, index) => <button onClick={handleChoice} key={index}>{choice.replace(/&#039;/g, "'").replace(/&amp;/g, "&").replace(/&quot;/g, "'").replace(/&eacute;/g, "é")}</button>)}
         </div>
     ) 
 }
